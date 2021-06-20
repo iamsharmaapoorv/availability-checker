@@ -1,0 +1,2 @@
+class AvailabilityCheckerException(Exception):
+    pass
