@@ -1,9 +1,10 @@
-from profile import *
-from client import *
-from subscription import *
-from amazon_product import *
-from shopatsc_product import *
-from email_notification import EmailNotification
+from profiles.profile import *
+from clients.client import *
+from subscriptions.subscription import *
+from products.amazon_product import *
+from products.shopatsc_product import *
+from notifications.email_notification import EmailNotification
+
 ps5_url = "https://www.amazon.in/Sony-CFI-1008A01R-PlayStation-5-console/dp/B08FV5GC28/ref=sr_1_1?crid=P99RKF8O9NCK&dchild=1&keywords=playstation+5&qid=1623180606&refinements=p_n_availability%3A1318485031&rnid=1318483031&sprefix=play%2Caps%2C333&sr=8-1"
 ps5 = AmazonProduct(ps5_url)
 
