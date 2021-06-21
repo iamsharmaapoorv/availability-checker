@@ -50,16 +50,16 @@ test_fk_subscription.add_notification(EmailNotification)
 """===="""
 
 
-apoorv = Client('Apoorv', "9629770677", 'appycoolme@gmail.com',  "110078")
+apoorv = Client('Apoorv', "9876543210", 'availability-checker@gmail.com',  "123456")
 
 apoorv_profile = Profile(apoorv)
 apoorv_profile.add_subscription(ps5_subscription)
 #apoorv_profile.add_subscription(test_subscription)
 
 apoorv_profile.add_subscription(ps5_shopatsc_subscription)
-apoorv_profile.add_subscription(test_shopatsc_subscription)
+# apoorv_profile.add_subscription(test_shopatsc_subscription)
 
 apoorv_profile.add_subscription(ps5_fk_subscription)
-apoorv_profile.add_subscription(test_fk_subscription)
+# apoorv_profile.add_subscription(test_fk_subscription)
 
 apoorv_profile.ping()

@@ -22,7 +22,7 @@ class EmailNotification(Notification):
         email_username = config['default']['username']
         email_password = config['default']['password']
 
-        # server = smtplib.SMTP('smtp.gmail.com', 587)
+        
         # server = smtplib.SMTP('localhost', 8025)
         # con = server
         # con.ehlo()
@@ -33,10 +33,11 @@ class EmailNotification(Notification):
         # con.sendmail(email_from, email_to, email_body)
         # con.quit()
 
-        # server.ehlo_or_helo_if_needed()
-        # server.starttls()
-        # server.ehlo_or_helo_if_needed()
-        # server.login(email_username, email_password)
-        # # server.sendmail(USERNAME, client.email, content)
-        # server.send_message(msg)
-        # server.quit()
+        server = smtplib.SMTP('smtp.gmail.com', 587)
+        server.ehlo_or_helo_if_needed()
+        server.starttls()
+        server.ehlo_or_helo_if_needed()
+        server.login(email_username, email_password)
+        # server.sendmail(USERNAME, client.email, content)
+        server.send_message(msg)
+        server.quit()

@@ -3,7 +3,7 @@ from random import random
 from datetime import datetime, timedelta
 from exceptions.availability_checker_exception import AvailabilityCheckerException
 from subscriptions.subscription import Subscription
-from heapq import *
+from heapq import heappop, heappush
 
 
 class Profile:
